@@ -1,61 +1,67 @@
 /* PURPLE SWING GLOBAL CSS HEADER */
 
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=DM+Sans&display=swap");
+
 /* Tags */
 
+@media (max-width: 600px) {
+
+    /* Media query fixes mobile support */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .group {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .base-button {
+        width: 100%;
+    }
+}
+
 img {
-    width: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
-    color: white;
-    font-family: Poppins;
+    font-family: "Poppins", Verdana, sans-serif;
     font-size: 50px;
 }
 
 h2 {
-    color: white;
-    font-family: Poppins;
+    font-family: "Poppins", Verdana, sans-serif;
     font-size: 30px;
 }
 
-p {
-    padding-left: 3px;
-    padding-right: 3px;
-    color: white;
-    font-size: 20px;
-    font-family: DM Sans;
-}
-
-ul {
-    padding-left: 3px;
-    padding-right: 3px;
-    color: white;
-    font-size: 20px;
-    font-family: DM Sans;
-}
-
+p,
+ul,
 li {
-
-    padding-left: 3px;
-    padding-right: 3px;
-    color: white;
-    font-size: 20px;
-    font-family: DM Sans;
+    padding: 0 3px;
+    font-size: 1.1rem;
 }
 
 button {
-    color: white;
-    font-family: DM Sans;
     font-size: 20px;
 }
 
 body {
-    color: white;
     background-color: #291637;
 }
 
 html {
     /* No scrollbar */
+    font-family: "DM Sans", Verdana, sans-serif;
+    color: white;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -79,7 +85,6 @@ hr {
 
 .group {
     margin: 25px 35px 25px 35px;
-    color: white;
     background-color: #200f2c;
     border-color: #8147a7;
     border-width: 2px;
@@ -89,8 +94,6 @@ hr {
 }
 
 .small {
-    color: #ffffff;
-    font-family: DM Sans;
     font-size: 15px;
 }
 
@@ -103,9 +106,10 @@ hr {
 }
 
 .logo {
+    width: 800px;
+    max-width: 80%;
     -webkit-animation: logoAnimation 4s ease infinite;
     animation: logoAnimation 4s ease infinite;
-    transform-style: preserve-3d;
 }
 
 .base-button {
@@ -134,13 +138,15 @@ hr {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
     gap: 16px;
     margin-top: 10px;
 }
 
 .project-item {
     height: 250px;
+    max-width: 100%;
     overflow: hidden;
     border-radius: 10px;
     transition: 0.3s ease;
@@ -214,17 +220,4 @@ a:visited {
         filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
         transform: rotateX(0deg);
     }
-}
-
-/* Fonts */
-
-@font-face {
-    font-family: Poppins, Verdana, sans-serif;
-    font-weight: normal;
-    src: url(/fonts/poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: DM Sans, Verdana, sans-serif;
-    src: url(/fonts/dmsans/dmsans-variable.ttf);
 }

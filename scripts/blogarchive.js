@@ -1,5 +1,6 @@
+// Only perform when document content loaded
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("posts.json")
+    fetch("posts.json") // Get json
         .then(res => res.json())
         .then(posts => {
             const ul = document.querySelector(".group");
@@ -11,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
+            // For every post in the json, make an li and a tag for them, the a href will be the post
+            // html file name.
             posts.forEach(post => {
                 const li = document.createElement("li");
 
@@ -23,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         })
         .catch(err => {
+            // Posts weren't parsed correctly
             console.error("Failed to load blog archive", err);
 
             const ul = document.querySelector(".group");
