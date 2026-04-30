@@ -1,0 +1,230 @@
+/* PURPLE SWING GLOBAL CSS HEADER */
+
+/* Tags */
+
+img {
+    width: 500px;
+}
+
+h1 {
+    color: white;
+    font-family: Poppins;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    font-family: Poppins;
+    font-size: 30px;
+}
+
+p {
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-size: 20px;
+    font-family: DM Sans;
+}
+
+ul {
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-size: 20px;
+    font-family: DM Sans;
+}
+
+li {
+
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-size: 20px;
+    font-family: DM Sans;
+}
+
+button {
+    color: white;
+    font-family: DM Sans;
+    font-size: 20px;
+}
+
+body {
+    color: white;
+    background-color: #291637;
+}
+
+html {
+    /* No scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+hr {
+    background-color: #200f2c;
+    border: none;
+    height: 3px;
+}
+
+
+/* Classes */
+
+.hidden {
+    display: none;
+}
+
+.group {
+    margin: 25px 35px 25px 35px;
+    color: white;
+    background-color: #200f2c;
+    border-color: #8147a7;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 15px 30px;
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.5));
+}
+
+.small {
+    color: #ffffff;
+    font-family: DM Sans;
+    font-size: 15px;
+}
+
+.copyright {
+    text-align: center;
+    color: #b8afce;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.logo {
+    -webkit-animation: logoAnimation 4s ease infinite;
+    animation: logoAnimation 4s ease infinite;
+    transform-style: preserve-3d;
+}
+
+.base-button {
+    background-color: #8147a7;
+    border: none;
+    border-radius: 12px;
+    transition: 250ms;
+    padding: 15px 30px;
+    color: white;
+}
+
+.base-button:hover {
+    background-color: #c36aff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(195, 106, 255, 0.4);
+    -moz-box-shadow: 0px 0px 30px 3px rgba(195, 106, 255, 0.4);
+    box-shadow: 0px 0px 30px 3px rgba(195, 106, 255, 0.4);
+}
+
+.head {
+    text-align: center;
+    background-color: rgb(30, 15, 39);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.project-item {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.12);
+}
+
+.project-item:hover {
+    filter: drop-shadow(0 0 5px rgb(157, 115, 206));
+}
+
+
+/* Links */
+
+a {
+    /* Default */
+    text-decoration: none;
+    color: #0fd153;
+}
+
+a:hover {
+    /* Hovered */
+    color: #adf7c7;
+}
+
+a:active {
+    /* Clicked */
+    color: #d6ffe4;
+}
+
+a:visited {
+    /* Already visited */
+    color: #0fd153;
+}
+
+/* Animations */
+@keyframes logoAnimation {
+
+    0% {
+
+        filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        transform: rotateX(0deg);
+    }
+
+    25% {
+        filter: drop-shadow(10px 10px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        transform: rotateX(-20deg);
+    }
+
+    50% {
+        filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        transform: rotateX(0deg);
+    }
+
+    75% {
+        filter: drop-shadow(10px -10px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        transform: rotateX(20deg);
+    }
+
+    100% {
+
+        filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        transform: rotateX(0deg);
+    }
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Poppins, Verdana, sans-serif;
+    font-weight: normal;
+    src: url(/fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: DM Sans, Verdana, sans-serif;
+    src: url(/fonts/dmsans/dmsans-variable.ttf);
+}
