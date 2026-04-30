@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("blogs/posts.json")
+    fetch("docs/blogs/posts.json")
         .then(res => res.json())
         .then(posts => {
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (container && link) {
                 // Show the "newest blog"
-                link.href = `blogs/${latest}`;
+                link.href = `docs/blogs/${latest}`;
                 container.style.display = "list-item";
             }
 
