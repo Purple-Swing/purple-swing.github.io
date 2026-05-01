@@ -1,6 +1,5 @@
-// Only perform when document content loaded
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("posts.json") // Get json
+function loadArchive() {
+    fetch("/docs/blogs/posts.json") // Get json
         .then(res => res.json())
         .then(posts => {
             const ul = document.querySelector(".group");
@@ -18,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const li = document.createElement("li");
 
                 const a = document.createElement("a");
-                a.href = `${post}`;
-                a.textContent = post;
+                a.href = `/${post.slug}`;
+                a.textContent = `${post.title} - ${post.date}`;
 
                 li.appendChild(a);
                 ul.appendChild(li);
@@ -35,4 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
             li.textContent = "No blog posts";
             ul.appendChild(li);
         });
-});
+};
+
+document.addEventListener("DOMContentLoaded", loadArchive); 

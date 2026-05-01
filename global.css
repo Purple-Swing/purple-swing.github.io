@@ -145,7 +145,7 @@ hr {
 }
 
 .project-item {
-    height: 250px;
+    min-height: 150px;
     max-width: 100%;
     overflow: hidden;
     border-radius: 10px;

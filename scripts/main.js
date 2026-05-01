@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function loadBlog() {
     fetch("docs/blogs/posts.json")
         .then(res => res.json())
         .then(posts => {
@@ -6,18 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
             // Don't attempt to display
             if (!posts || posts.length === 0) return;
 
-            // Get latest post by json length
-            const latest = posts[posts.length - 1];
-
+            // Sort by newest date parameter
+            posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+            const latest = posts[0];
             const container = document.getElementById("newestBlogContainer");
-            const link = document.getElementById("newestBlog");
+            const newest = document.getElementById("newestBlog");
 
-            if (container && link) {
-                // Both container and link are available, so set the container to be visible
-                link.href = `docs/blogs/${latest}`;
+            if (container && newest && latest) {
                 container.style.display = "list-item";
+                newest.href = `/${latest.slug}`;
+                newest.textContent = `Latest Post: ${latest.title}`;
             }
-
         })
         .catch(err => console.error("Could not load posts list.", err));
-});
+}
+
+document.addEventListener("DOMContentLoaded", loadBlog)
