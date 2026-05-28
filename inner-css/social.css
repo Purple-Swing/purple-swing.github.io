@@ -1,0 +1,27 @@
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.social-item {
+    min-height: 150px;
+    max-width: 100%;
+
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.social-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.social-item img:hover {
+    transform: scale(1.12);
+}
