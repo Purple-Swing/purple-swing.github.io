@@ -28,6 +28,33 @@
     }
 }
 
+#hero {
+    margin: 5% 5% 0% 5%;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 10%;
+    align-items: center;
+    animation: ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    #hide-mobile {
+        display: none;
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        justify-self: center;
+        gap: 0;
+    }
+
+    #hero img {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -66,6 +93,10 @@ html {
     scrollbar-width: none;
 }
 
+iframe {
+    border-radius: 1.5em;
+}
+
 html::-webkit-scrollbar {
     display: none;
 }
@@ -80,23 +111,24 @@ hr {
 /* Classes + ID */
 
 #nav {
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
-    margin: 0px 50px 0px 50px;
+    text-align: center;
+    z-index: 20;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
+    margin: 2% 2% 2% 2%;
     position: sticky;
-    top: 0;
+    top: 1em;
     display: flex;
-    align-content: center;
-    overflow: hidden;
+    justify-content: left;
+    overflow: auto;
+    white-space: nowrap;
     background-color: #104122;
     border-radius: 15px;
-}
-
-#hidden {
-    display: none;
+    vertical-align: middle;
+    align-items: center;
 }
 
 .group {
-    margin: 25px 50px 25px 50px;
+    margin: 5% 5% 5% 5%;
     background-color: #200f2c;
     border-color: #8147a7;
     border-width: 2px;
@@ -105,20 +137,16 @@ hr {
     filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.5));
 }
 
-#small {
-    font-size: 15px;
-}
-
 #copyright {
     text-align: center;
-    color: #b8afce;
+    color: #a99fc1;
     font-family: Poppins;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 0.75em;
 }
 
 .logo {
-    width: 800px;
+    width: 0 auto;
     max-width: 80%;
     -webkit-animation: logoAnimation 4s ease infinite;
     animation: logoAnimation 4s ease infinite;
@@ -175,7 +203,7 @@ hr {
 }
 
 .project-item:hover img {
-    transform: scale(1.12);
+    transform: scale(1.15);
 }
 
 .project-item:hover {
@@ -226,28 +254,28 @@ a:visited {
 @keyframes logoAnimation {
     0% {
 
-        filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.2));
         transform: rotateX(0deg);
     }
 
     25% {
-        filter: drop-shadow(10px 10px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        filter: drop-shadow(0.5em 0.5em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.2));
         transform: rotateX(-20deg);
     }
 
     50% {
-        filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.2));
         transform: rotateX(0deg);
     }
 
     75% {
-        filter: drop-shadow(10px -10px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        filter: drop-shadow(0.5em -0.5em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.2));
         transform: rotateX(20deg);
     }
 
     100% {
 
-        filter: drop-shadow(10px 0px 0px rgba(0, 0, 0)) drop-shadow(0px 0px 25px rgb(195, 106, 255, 0.2));
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.2));
         transform: rotateX(0deg);
     }
 
