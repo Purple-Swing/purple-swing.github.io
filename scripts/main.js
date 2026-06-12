@@ -18,7 +18,7 @@ function documentLoaded() {
     const copyright = document.createElement("div");
     copyright.id = "copyright";
     copyright.innerHTML = `
-    © PURPLE SWING, 2026 | UK UNREGISTERED JOINT AUTHORSHIP | Site v2.4
+    © PURPLE SWING, 2026 | UK UNREGISTERED JOINT AUTHORSHIP | Site v2.5
     `
 
     // Put before everything
