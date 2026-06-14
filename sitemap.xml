@@ -6,7 +6,7 @@
 
       <loc>https://www.purpleswing.com/</loc>
 
-      <lastmod>2026-05-28</lastmod>
+      <lastmod>2026-06-14</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -18,7 +18,7 @@
 
       <loc>https://www.purpleswing.com/subpage/projects</loc>
 
-      <lastmod>2026-05-28</lastmod>
+      <lastmod>2026-06-14</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -29,7 +29,40 @@
 
       <loc>https://www.purpleswing.com/subpage/socials</loc>
 
-      <lastmod>2026-05-28</lastmod>
+      <lastmod>2026-06-14</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+
+      <loc>https://www.purpleswing.com/subpage/newsletters</loc>
+
+      <lastmod>2026-06-14</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+
+      <loc>https://www.purpleswing.com/subpage/site-updates</loc>
+
+      <lastmod>2026-06-14</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+   </url>
+   
+   <url>
+
+      <loc>https://www.purpleswing.com/subpage/socials</loc>
+
+      <lastmod>2026-06-14</lastmod>
 
       <changefreq>daily</changefreq>
 
