@@ -8,7 +8,7 @@
 /* Tags */
 
 #hero {
-    margin: 3% 5% 3% 5%;
+    margin: 3% 10% 0% 10%;
     display: grid;
     grid-template-columns: 1.3fr 1.3fr;
     gap: 10%;
@@ -139,6 +139,7 @@ hr {
 
     gap: 20px;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .project-item {
@@ -146,6 +147,7 @@ hr {
     justify-content: center;
     align-items: center;
 
+    max-height: 800px;
     overflow: hidden;
     border-radius: 25px;
 }

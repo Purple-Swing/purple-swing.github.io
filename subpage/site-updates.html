@@ -5,12 +5,40 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Purple Swing"/>
+    <meta property="og:description" content="Site Updates"/>
+    
+    <meta property="og:image" content="https://purpleswing.com/site-assets/thumb.png"/>
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+
+    <meta property="og:url" content="https://purpleswing.com/subpage/site-updates"/>
+
     <link rel="stylesheet" href="/global.css">
     <link rel="stylesheet" href="/inner-css/social.css">
     <title>Purple Swing | Site Updates</title>
+</head>
 
-    <div class="group">
+<body>
+        <div class="group">
         <ul>
+            <li>
+                v3.0 | The Big Fix Update | June 20
+                <ul>
+                    <li>Separated projects on projects page by 'GAMES', 'TOOLS', 'MUSIC' and 'MODS'</li>
+                    <li>Added POSTBOX, Tureen Music and Vs. Al3x to the projects page</li>
+                    <li>Added an error 404 page</li>
+                    <li>Added 'newest_newsletter' field to site-info.json so that the newest newsletter on the home page links directly to the page</li>
+                    <li>site-info.json and newsletters.json are now both stored inside of /config</li>
+                    <li>Updated the home page 'About Us' text</li>
+                    <li>Made freble's link in the 'About Us' section link to the YouTube channel</li>
+                    <li>Fixed an issue where newsletter could sometimes try to present itself as null</li>
+                    <li>Added open graph metadata to every page</li>
+                </ul>
+            </li>
+
+            <br>
+
             <li>
                 v2.6 | Newsletters Update | June 14
                 <ul>
@@ -20,7 +48,6 @@
                     <li>Finally added the first newsletter to the site!</li>
                     <li>Made social and project hovers use out-quadratic easing</li>
                     <li>Made social hovered image size the same as project hovered image size</li>
-                    <li>Changed projects to use itch.io page thumbnails</li>
                 </ul>
             </li>
 
@@ -53,4 +80,4 @@
             </li>
         </ul>
     </div>
-</head>
+</body>

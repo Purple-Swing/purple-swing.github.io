@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("newsletter-list");
 
-    fetch("/newsletters.json").then(res => res.json()).then(letters => {
+    fetch("/config/newsletters.json").then(res => res.json()).then(letters => {
         const visibleLetters = letters.filter(letter => letter.show);
 
         if (!letters || letters.length === 0 || visibleLetters.length === 0) {

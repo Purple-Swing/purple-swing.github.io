@@ -4,12 +4,17 @@ newsletter_link.rel = "stylesheet";
 newsletter_link.type = "text/css";
 document.head.appendChild(newsletter_link);
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("/newsletters.json").then(res => res.json()).then(letters => {
+document.addEventListener("DOMContentLoaded", async () => {
+    fetch("/config/newsletters.json").then(res => res.json()).then(letters => {
         const slug = window.location.pathname.match(/([^/]+)\.html$/)?.[1];
-        const newsletter = letters.find(letter => letter.slug === slug);
+        let newsletter = letters.find(letter => letter.slug === slug);
 
-        if (newsletter.show == false) {
+        if (!newsletter)
+        {
+            return;
+        }
+
+        if (newsletter.show === false) {
             const container = document.getElementById("container");
             container.innerText = "Selected newsletter could not be accessed and may be private.";
             container.style = "margin: 3rem; text-align: center;";

@@ -1,10 +1,12 @@
 {
-    "version": "2.6",
+    "version": "3.0",
     "navbar": true,
-    "navbar_pages": [
+    "navbar_pages": 
+    [
         "<a href='/subpage/projects.html'>Projects</a>",
         "<a href='/subpage/socials.html'>Socials</a>",
         "<a href='/subpage/newsletters.html'>Newsletters</a>",
         "<a href='/subpage/site-updates.html'>Site Updates</a>"
-    ]
+    ],
+    "newest_newsletter": "q226"
 }
