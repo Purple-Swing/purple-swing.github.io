@@ -1,0 +1,62 @@
+/* 
+ON EVERY PAGE 
+----------------
+*/
+
+
+/* 
+FONTS
+----------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=DM+Sans&display=swap");
+
+
+/* 
+TAG
+----------------
+*/
+body {
+    background-color:  #260c34;
+    color: white;
+    font-family: "Poppins";
+}
+
+/* 
+LINK 
+----------------
+*/
+a {
+    color: #07844e;
+}
+
+a:hover {
+    color: #08c272
+}
+
+a:active {
+    color: #e0fbef;
+}
+
+
+/* 
+NAVBAR 
+----------------
+*/
+#nav {
+    padding: 20px;
+    text-align: center;
+    z-index: 20;
+    filter: drop-shadow(0px 0px 5.5px rgba(0, 0, 0, 0.6));
+    margin: 2% 4% 2% 4%;
+    position: sticky;
+    top: 0.5em;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: #104122;
+    border-radius: 15px;
+    vertical-align: middle;
+    align-items: center;
+    scrollbar-color: #0fd153 #0c2612;
+}
