@@ -1,0 +1,67 @@
+.topSector {
+    margin: 3% 10% 3% 10%;
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr;
+    gap: 10%;
+    align-items: center;
+    animation: ease-in-out;
+}
+
+#logo {
+    -webkit-animation: logoAnimation 4s ease infinite;
+    animation: logoAnimation 4s ease infinite;
+}
+
+@keyframes logoAnimation {
+    0% {
+
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.35));
+        transform: rotateX(0deg);
+    }
+
+    25% {
+        filter: drop-shadow(0.5em 0.5em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.1));
+        transform: rotateX(-20deg);
+    }
+
+    50% {
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.35));
+        transform: rotateX(0deg);
+    }
+
+    75% {
+        filter: drop-shadow(0.5em -0.5em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.1));
+        transform: rotateX(20deg);
+    }
+
+    100% {
+
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.35));
+        transform: rotateX(0deg);
+    }
+
+}
+
+
+/* Is Mobile Device */
+
+@media screen and (max-width: 800px) {
+    #logo {
+        width: 0 auto;
+        max-width: 100%;
+        -webkit-animation: none;
+        animation: none;
+        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.25));
+    }
+
+    .topSector {
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin: 3% 10% 18% 10%;
+    }
+
+    .topSector img {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

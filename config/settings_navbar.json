@@ -1,9 +1,36 @@
 {
+    "hide": "false",
     "pages": 
     [
         {
             "displayName": "Home",
+            "image": "/img/logo/psLQ.webp",
             "href": "/index.html"
+        },
+        {
+            "displayName": "Projects",
+            "image": "",
+            "href": "/projects.html"
+        },
+        {
+            "displayName": "Socials",
+            "image": "",
+            "href": "/socials.html"
+        },
+        {   
+            "displayName": "Newsletters",
+            "image": "",
+            "href": "/newsletters.html"
+        },
+        {
+            "displayName": "Archive",
+            "image": "",
+            "href": "/archive.html"
+        },
+        {   
+            "displayName": "Site Updates",
+            "image": "",
+            "href": "/updates.html"
         }
     ]
 }
