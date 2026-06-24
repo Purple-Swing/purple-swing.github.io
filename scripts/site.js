@@ -41,7 +41,7 @@ async function createNavBar()
     pages.forEach(page => {
         let innerHTML;
         
-        if (page.image != "")
+        if (page.image)
         {
             innerHTML = `<a href="${page.href}"> <img src="${page.image}" alt="${page.displayName}"></a>`;
         }
@@ -63,7 +63,7 @@ async function loadSiteInfo()
         site_info = await res.json();
     }
     catch (err) {
-        console.error("Couldn't get navbar settings.", err);
+        console.error("Couldn't get site info.", err);
         return;
     }
 
