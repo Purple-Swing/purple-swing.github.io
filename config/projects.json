@@ -8,7 +8,34 @@
             "type": "game"
         },
         {
-
+            "name": "Great Flarp Birb 2",
+            "img": "gfb2.jpg",
+            "link": "https://purpleswing.itch.io/gfb2",
+            "type": "game"
+        },
+        {
+            "name": "POSTBOX",
+            "img":  "postbox.jpg",
+            "link": "https://postboxofficial.bandcamp.com",
+            "type": "music"
+        },
+        {
+            "name": "Tureen Music",
+            "img": "tureenmusic.jpg",
+            "link": "https://tureen.bandcamp.com",
+            "type": "music"
+        },
+        {
+            "name": "Reign",
+            "img": "reign.jpg",
+            "link": "https://github.com/Purple-Swing/Reign",
+            "type": "tool"
+        },
+        {
+            "name": "Vs. Al3x",
+            "img": "vsal3x.jpg",
+            "link": "https://gamebanana.com/mods/575951",
+            "type": "mod"
         }
     ]
 }   

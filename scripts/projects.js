@@ -29,6 +29,7 @@ async function createProjects()
 
         const projectLink = document.createElement("a");
         projectLink.href = project.link;
+        projectLink.title = project.name;
 
         const projectImage = document.createElement("img");
         projectImage.src = project.img ? `/img/projects/${project.type}/${project.img}` : "/img/missing.webp";
@@ -41,16 +42,42 @@ async function createProjects()
     // Fallback if no items
     grids.forEach(grid => {
         if (grid.children.length === 0) {
-            grid.textContent = `No ${makePlural(grid.id)} found.`;
+            grid.textContent = `No ${getPluralForm(grid.id)} found.`;
         }
     });
 }
 
-function makePlural(name)
+function getPluralForm(name)
 {
-    let irregular = name.endsWith("c") ||  name.endsWith("x") ||  name.endsWith("y") ||  name.endsWith("s");
+    const irregular = name.endsWith("c") ||  name.endsWith("x") ||  name.endsWith("y") ||  name.endsWith("s");
 
-    return name += !irregular ? "s" : "";
+    switch (name.substr(name.length - 1))
+    {
+        case "c":
+            {
+                return name;
+            }
+        case "x":
+            {
+                return name;
+            }
+        case "s": 
+            {
+                return name;
+            }
+        case "t":
+            {
+                return name;
+            }
+        case "y":
+            {
+                return name.slice(0, -1) + "ies";
+            }
+        default:
+            {
+                return name + "s";
+            }
+    }
 }
 
 
