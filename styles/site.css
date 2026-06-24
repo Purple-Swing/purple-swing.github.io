@@ -45,6 +45,7 @@ iframe {
 }
 
 body {
+    margin: 2% 5% 2% 5%;
     background-color: #291637;
     color: white;
     font-family: "Poppins";
@@ -58,7 +59,7 @@ p, ul, li {
 }
 
 hr {
-    margin: 0px 90px 0px 90px;
+    margin: 0% 10% 0% 10%;
     background-color: #200f2c;
     border: none;
     height: 3px;
@@ -70,6 +71,7 @@ LINK
 ----------------
 */
 a {
+    text-decoration: none;
     color: #0fd153;
 }
 
@@ -96,6 +98,7 @@ ELEMENTS
 
 
     hr {
+        margin: 2% 0% 2% 0%;
         background-color: #442e50;
         border: none;
         height: 3px;
@@ -108,7 +111,7 @@ NAVBAR
 ----------------
 */
 #nav {
-    font-size: 0.9em;
+    font-size: 1em;
 
     z-index: 100;
 
@@ -123,7 +126,9 @@ NAVBAR
 
     display: flex;
     justify-content: left;
-    overflow: auto;
+
+    overflow-x: auto;
+    overflow-y: hidden;
 
     white-space: nowrap;
 
@@ -150,6 +155,7 @@ NAVBAR
 
 #nav img {
     vertical-align: middle;
+    overflow: hidden;
     max-height: 5em;
     padding: 0.1em 0.1em 0.1em 0.1em;
 }

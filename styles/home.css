@@ -1,8 +1,8 @@
 .topSector {
-    margin: 3% 10% 3% 10%;
+    margin: 0% 5% 0% 5%;
     display: grid;
     grid-template-columns: 1.3fr 1.3fr;
-    gap: 10%;
+    gap: 2em;
     align-items: center;
     animation: ease-in-out;
 }
@@ -51,13 +51,13 @@
         max-width: 100%;
         -webkit-animation: none;
         animation: none;
-        filter: drop-shadow(0.5em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.25));
+        filter: drop-shadow(0.3em 0em 0em rgba(0, 0, 0)) drop-shadow(0em 0em 1.5em rgb(195, 106, 255, 0.25));
     }
 
     .topSector {
         grid-template-columns: 1fr;
         justify-self: center;
-        margin: 3% 10% 18% 10%;
+        margin: 3% 5% 3% 5%;
     }
 
     .topSector img {

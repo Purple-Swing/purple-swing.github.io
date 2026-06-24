@@ -1,4 +1,5 @@
 let settings_navbar;
+let member_list;
 let site_info;
 
 function loadCSS(href)
@@ -55,7 +56,7 @@ async function createNavBar()
     document.body.prepend(nav);
 }
 
-async function appendSmallText()
+async function loadSiteInfo()
 {
     try {
         const res = await fetch("/config/site_info.json");
@@ -66,14 +67,41 @@ async function appendSmallText()
         return;
     }
 
+    // Bottom Text
     const smallTextElement = document.createElement("p");
     smallTextElement.id = "bottomText";
-    smallTextElement.innerHTML = `v${site_info.version} - released ${site_info.releaseDate} - © PURPLE SWING 2026, JOINT AUTHORSHIP`;
+    smallTextElement.innerHTML = `v${site_info.version} | ${site_info.releaseDate} - © PURPLE SWING 2026, JOINT AUTHORSHIP`;
     document.body.append(smallTextElement);
-}
 
+    // Member list
+    const member_list = site_info.members;
+    const memberListElement = document.getElementById("memberList");
+
+    
+    if (memberListElement)
+    {
+        memberListElement.innerHTML = "";
+    }
+    
+    for (let i = 0; i < member_list.length; i++) {
+        const member = member_list[i];
+
+        const key = Object.keys(member)[0];
+        const value = Object.values(member)[0];
+
+        const isLastElement = (i < member_list.length - 1);
+        const isAnd = isLastElement ? "" : "and ";
+        const hasComma = isLastElement ? ", " : "";
+
+        const text = `${isAnd} <a href="${value}">${key}</a>${hasComma}`;
+        
+        if (memberListElement) {
+            memberListElement.innerHTML += text;
+        }
+    }
+}
 
 // CSS load
 loadCSS("site");
 document.addEventListener("DOMContentLoaded", () => createNavBar());
-appendSmallText();
+loadSiteInfo();

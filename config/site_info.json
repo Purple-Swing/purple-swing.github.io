@@ -1,9 +1,15 @@
 {
-    "psMembers": [
-        "Tureen",
-        "grza3",
-        "freble"
+    "members": [
+        {
+            "Tureen": "https://bsky.app/profile/tureen.bsky.social"
+        },
+        {
+            "grza3": "https://bsky.app/profile/grza3.bsky.social"
+        },
+        {
+            "freble": "https://www.youtube.com/@freble_clef"
+        }
     ],
     "version": "3.1.0",
-    "releaseDate": "23/06/26"
+    "releaseDate": "24/06/26"
 }
