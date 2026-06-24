@@ -49,8 +49,6 @@ async function createProjects()
 
 function getPluralForm(name)
 {
-    const irregular = name.endsWith("c") ||  name.endsWith("x") ||  name.endsWith("y") ||  name.endsWith("s");
-
     switch (name.substr(name.length - 1))
     {
         case "c":
