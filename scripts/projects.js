@@ -57,11 +57,23 @@ function getPluralForm(name)
             }
         case "x":
             {
-                return name;
+                return name + "es";
+            }
+        case "z":
+            {
+                return name + "es";
+            }
+        case "sh":
+            {
+                return name + "es";
+            }
+        case "ch":
+            {
+                return name + "es";
             }
         case "s": 
             {
-                return name;
+                return name + "es";
             }
         case "t":
             {

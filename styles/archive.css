@@ -1,0 +1,19 @@
+#archive-container {
+    background-color: #3a1d51;
+    overflow: hidden;
+    margin: 2% 5% 2% 5%;
+    padding: 30px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0px 0px 5px rgba(90, 39, 112, 0.4));
+    border-radius: 15px;
+
+    hr {
+        margin: 2% 0% 2% 0%;
+        background-color: #5e4678;
+        border: none;
+        height: 3px;
+    }
+}
+
+#archive-container li, #archive-container ul {
+    list-style-type: none;
+}

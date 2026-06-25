@@ -1,0 +1,126 @@
+[
+    {
+        "name": "Great Flarp Birb",
+        "binFolder": "gfb",
+        "versions": [
+            {
+                "version": "1.0.0 (Windows)",
+                "releaseDate": "20/07/23",
+                "link": ""
+            },
+            {
+                "version": "1.1.0 (Windows)",
+                "releaseDate": "21/07/23 ",
+                "link": ""
+            },
+            {
+                "version": "1.2.0 (Windows)",
+                "releaseDate": "07/04/26",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Flarp Birb Horror",
+        "binFolder": "fbh",
+        "versions": [
+            {
+                "version": "1.0.0 (Windows)",
+                "releaseDate": "19/08/23",
+                "link": ""
+            },
+            {
+                "version": "1.0.1 (Windows)",
+                "releaseDate": "20/08/23",
+                "link": ""
+            },
+            {
+                "version": "1.1.0 (Windows)",
+                "releaseDate": "",
+                "link": "1.1.0.zip"
+            },
+            {
+                "version": "1.2.0 (Windows)",
+                "releaseDate": "27/08/23",
+                "link": ""
+            },
+            {
+                "version": "1.3.0 (Windows)",
+                "releaseDate": "28/08/23",
+                "link": "1.3.0.zip"
+            },
+            {
+                "version": "1.3.1 (Windows)",
+                "releaseDate": "28/08/23",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Great Flarp Birb 2",
+        "binFolder": "gfb2",
+        "versions": [
+            {
+                "version": "1.0.0 (Windows)",
+                "releaseDate": "17/02/25",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Flarp Birb Horror 2",
+        "binFolder": "fbh2",
+        "versions": [
+            {
+                "version": "0.1.0 (Windows)",
+                "releaseDate": "19/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.2.0 (Windows)",
+                "releaseDate": "22/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.3.0 (Windows)",
+                "releaseDate": "23/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.4.0 (Windows)",
+                "releaseDate": "29/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.4.1 (Windows)",
+                "releaseDate": "28/04/25",
+                "link": ""
+            },
+            {
+                "version": "0.5.0 (Windows)",
+                "releaseDate": "06/05/25",
+                "link": ""
+            },
+            {
+                "version": "0.5.1 (Windows)",
+                "releaseDate": "16/11/25",
+                "link": ""
+            },
+            {
+                "version": "0.6.0 (Windows)",
+                "releaseDate": "30/03/26",
+                "link": ""
+            },
+            {
+                "version": "0.6.0 (Mac)",
+                "releaseDate": "",
+                "link": ""
+            },
+            {
+                "version": "0.6.0 (Linux)",
+                "releaseDate": "",
+                "link": ""
+            }
+        ]
+    }
+]
