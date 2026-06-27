@@ -6,23 +6,20 @@
             {
                 "version": "1.0.0",
                 "releaseDate": "20/07/23",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.0.0"
             },
             {
                 "version": "1.1.0",
-                "releaseDate": "21/07/23 ",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "releaseDate": "21/07/23",
+                "platforms": ["windows"],
+                "link": "1.1.0"
             },
             {
                 "version": "1.2.0",
                 "releaseDate": "07/04/26",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.2.0"
             }
         ]
     },
@@ -33,44 +30,38 @@
             {
                 "version": "1.0.0",
                 "releaseDate": "19/08/23",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.0.0"
             },
             {
                 "version": "1.0.1",
                 "releaseDate": "20/08/23",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.0.1"
             },
             {
                 "version": "1.1.0",
                 "releaseDate": "",
-                "winLink": "1.1.0-win.zip",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.1.0"
             },
             {
                 "version": "1.2.0",
                 "releaseDate": "27/08/23",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.2.0"
             },
             {
                 "version": "1.3.0",
                 "releaseDate": "28/08/23",
-                "winLink": "1.3.0-win.zip",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.3.0"
             },
             {
                 "version": "1.3.1",
                 "releaseDate": "28/08/23",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "link": "1.3.1"
             }
         ]
     },
@@ -81,9 +72,8 @@
             {
                 "version": "1.0.0",
                 "releaseDate": "17/02/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "platforms": ["windows"],
+                "offsite": "https://drive.google.com/file/d/1_icCC-h0LrFSEs8FuvOA5avyTI02-Yks/view"
             }
         ]
     },
@@ -94,58 +84,42 @@
             {
                 "version": "0.1.0",
                 "releaseDate": "19/03/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.2.0",
                 "releaseDate": "22/03/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.3.0",
                 "releaseDate": "23/03/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.4.0",
                 "releaseDate": "29/03/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.4.1",
                 "releaseDate": "28/04/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.5.0",
                 "releaseDate": "06/05/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.5.1",
                 "releaseDate": "16/11/25",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             },
             {
                 "version": "0.6.0",
                 "releaseDate": "30/03/26",
-                "winLink": "",
-                "macLink": "",
-                "linuxLink": ""
+                "link": ""
             }
         ]
     }

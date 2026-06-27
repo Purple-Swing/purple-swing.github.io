@@ -16,21 +16,27 @@ async function createArchive() {
         const archiveTopic = archive_data[i];
 
         const projectArchiveElement = document.createElement("div")
-        projectArchiveElement.id = ("project-archive");
+        projectArchiveElement.id = "project-archive";
             
         const topicList = document.createElement("ul");
+        topicList.id = "project-archive";
         topicList.textContent = archiveTopic.name;
 
         archiveTopic.versions.forEach(versionData => {
             const li = document.createElement("li");
+            li.id = "project-archive";
 
             li.append(`v${versionData.version} ( `);
 
             ["Windows", "Mac", "Linux"].forEach((os, index) => {
-                li.appendChild(createPlatform(versionData, os));
+                li.appendChild(createPlatform(versionData, os, archiveTopic.binFolder));
 
                 if (index < 2) {
-                    li.append(" | ");
+                    const appendLine = document.createElement("span");
+                    appendLine.innerText = " | "; 
+                    appendLine.style.color = "#6a4e6f";
+                    
+                    li.appendChild(appendLine);
                 }
             });
 
@@ -47,26 +53,38 @@ async function createArchive() {
     }
 }
 
-function createPlatform(versionData, os) {
+function createPlatform(versionData, os, folder) {
     let file = "";
 
-    switch (os) 
+    if ((versionData.link || versionData.offsite) && versionData.platforms)
     {
-        case "Windows":
-            file = versionData.winLink;
-            break;
-        case "Mac":
-            file = versionData.macLink;
-            break;
-        case "Linux":
-            file = versionData.linuxLink;
-            break;
+        if (versionData.platforms.includes(os.toLowerCase()))
+        {        
+            switch (os) 
+            {
+                case "Windows":
+                    {
+                        file = `${versionData.link}-win.zip`;
+                        break;
+                    }
+                case "Mac":
+                    {
+                        file = `${versionData.link}-mac.zip`;
+                        break;
+                    }
+                case "Linux":
+                    {
+                        file = `${versionData.link}-lix.zip`;
+                        break;
+                    }
+            }  
+        }
     }
 
     if (file) 
     {
         const link = document.createElement("a");
-        link.href = `/bin/${versionData.binFolder}/${file}`;
+        link.href = versionData.offsite ? versionData.offsite : `/bin/${folder}/${file}`;
         link.textContent = os;
         return link;
     }

@@ -14,6 +14,15 @@
     }
 }
 
-#archive-container li, #archive-container ul {
+li {
+    font-family: "Poppins";
+    color: white;
     list-style-type: none;
+    font-weight: normal;
+}
+
+ul {
+    font-family: "DM Sans";
+    color: #cc7732;
+    font-weight: 100;
 }
