@@ -22,23 +22,21 @@ async function createArchive() {
         topicList.textContent = archiveTopic.name;
 
         archiveTopic.versions.forEach(versionData => {
-            const list = document.createElement("li");
-            const link = versionData.link ? document.createElement("a") : document.createElement("p");
+            const li = document.createElement("li");
 
-            link.textContent = `v${versionData.version} - ${versionData.releaseDate ? versionData.releaseDate : "unknown"}`;
+            li.append(`v${versionData.version} ( `);
 
-            if (versionData.link)
-            {
-                link.href = `/bin/${versionData.binFolder}/${versionData.link}`;
-            }
-            else
-            {
-                link.style.color = "#6a4e6f";
-                link.style.fontStyle = "italic";
-            }
+            ["Windows", "Mac", "Linux"].forEach((os, index) => {
+                li.appendChild(createPlatform(versionData, os));
 
-            list.appendChild(link);
-            topicList.appendChild(list);
+                if (index < 2) {
+                    li.append(" | ");
+                }
+            });
+
+            li.append(` ) - ${versionData.releaseDate ? versionData.releaseDate : "Unknown"}`);
+
+            topicList.appendChild(li);
         });
 
         archiveContainer.appendChild(topicList);
@@ -47,6 +45,37 @@ async function createArchive() {
             archiveContainer.appendChild(document.createElement("hr"));
         }        
     }
+}
+
+function createPlatform(versionData, os) {
+    let file = "";
+
+    switch (os) 
+    {
+        case "Windows":
+            file = versionData.winLink;
+            break;
+        case "Mac":
+            file = versionData.macLink;
+            break;
+        case "Linux":
+            file = versionData.linuxLink;
+            break;
+    }
+
+    if (file) 
+    {
+        const link = document.createElement("a");
+        link.href = `/bin/${versionData.binFolder}/${file}`;
+        link.textContent = os;
+        return link;
+    }
+
+    const span = document.createElement("span");
+    span.textContent = os;
+    span.style.fontStyle = "italic";
+    span.style.color = "#6a4e6f";
+    return span;
 }
 
 document.addEventListener("DOMContentLoaded", createArchive);
