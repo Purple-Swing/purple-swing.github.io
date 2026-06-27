@@ -14,6 +14,12 @@
             "type": "game"
         },
         {
+            "name": "Purple Swing",
+            "img": "psmusic.jpg",
+            "link": "https://purpleswing.bandcamp.com",
+            "type": "music"
+        },
+        {
             "name": "POSTBOX",
             "img":  "postbox.jpg",
             "link": "https://postboxofficial.bandcamp.com",
