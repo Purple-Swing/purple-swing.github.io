@@ -101,7 +101,16 @@ async function loadSiteInfo()
     }
 }
 
+function genMeta()
+{
+    const meta = document.createElement("meta");
+    meta.name = "viewport";
+    meta.content = "width=device-width, initial-scale=1.0";
+    document.head.appendChild(meta);
+}
+
 // CSS load
+genMeta();
 loadCSS("site");
 document.addEventListener("DOMContentLoaded", () => createNavBar());
 loadSiteInfo();
