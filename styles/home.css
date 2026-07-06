@@ -45,7 +45,7 @@
 
 /* Is Mobile Device */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
     #logo {
         width: 0 auto;
         max-width: 100%;
