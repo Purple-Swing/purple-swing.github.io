@@ -34,7 +34,7 @@ async function createArchive() {
                 if (index < 2) {
                     const appendLine = document.createElement("span");
                     appendLine.innerText = " | "; 
-                    appendLine.style.color = "#6a4e6f";
+                    appendLine.style.color = "#33727a";
                     
                     li.appendChild(appendLine);
                 }
@@ -86,13 +86,14 @@ function createPlatform(versionData, os, folder) {
         const link = document.createElement("a");
         link.href = versionData.offsite ? versionData.offsite : `/bin/${folder}/${file}`;
         link.textContent = os;
+
         return link;
     }
 
     const span = document.createElement("span");
     span.textContent = os;
     span.style.fontStyle = "italic";
-    span.style.color = "#6a4e6f";
+    span.style.color = "#33727a";
     return span;
 }
 

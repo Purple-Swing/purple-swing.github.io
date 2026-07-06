@@ -1,5 +1,5 @@
 #archive-container {
-    background-color: #3a1d51;
+    background-color: #0e425a;
     overflow: hidden;
     margin: 2% 5% 2% 5%;
     padding: 30px;
@@ -8,7 +8,7 @@
 
     hr {
         margin: 2% 0% 2% 0%;
-        background-color: #5e4678;
+        background-color: #108397;
         border: none;
         height: 3px;
     }
@@ -23,6 +23,41 @@ li {
 
 ul {
     font-family: "DM Sans";
-    color: #cc7732;
+    color: #fdff8f;
     font-weight: 100;
+}
+
+/* Swaps that give the website a blue color scheme */
+
+#nav {
+    background-color: #0e425a;
+}
+
+#nav a:hover {
+    background-color: #2a779b;
+}
+
+#nav img {
+    filter: hue-rotate(70deg) saturate(70%);
+}
+
+#bottomText {
+    color: #4f6785
+}
+
+a {
+    text-decoration: none;
+    color: #45b7ec;
+}
+
+a:hover {
+    color: #add6f7;
+}
+
+a:active {
+    color: #d6e0ff;
+}
+
+body {
+    background-color: #052635;
 }
