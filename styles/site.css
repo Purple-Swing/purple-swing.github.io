@@ -178,29 +178,12 @@ IS MOBILE
 */
 
 @media screen and (max-width: 800px) {    
+    #nav, body, h1, h2, h3, p, li {
+        font-size: 116%;
+    }
+
     html {
         scrollbar-width: none;
-    }
-
-    body {
-        font-size: 1.2rem;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-    }
-
-    h3 {
-        font-size: 1.8rem;
-    }
-
-    p,
-    li {
-        font-size: 1.2rem;
     }
 
     .group {

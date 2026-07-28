@@ -66,18 +66,6 @@
         ]
     },
     {
-        "name": "Great Flarp Birb 2",
-        "binFolder": "gfb2",
-        "versions": [
-            {
-                "version": "1.0.0",
-                "releaseDate": "17/02/25",
-                "platforms": ["windows"],
-                "offsite": "https://drive.google.com/file/d/1_icCC-h0LrFSEs8FuvOA5avyTI02-Yks/view"
-            }
-        ]
-    },
-    {
         "name": "Flarp Birb Horror 2",
         "binFolder": "fbh2",
         "versions": [
