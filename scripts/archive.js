@@ -21,6 +21,7 @@ async function createArchive() {
         const topicList = document.createElement("ul");
         topicList.id = "project-archive";
         topicList.textContent = archiveTopic.name;
+        topicList.style.listStyle = "none";
 
         archiveTopic.versions.forEach(versionData => {
             const li = document.createElement("li");

@@ -26,7 +26,7 @@ async function createNavBar()
         return;
     }
 
-    if (settings_navbar.hide === "true")
+    if (settings_navbar.hide == true)
     {
         // Stop attempting to load navbar
         return;

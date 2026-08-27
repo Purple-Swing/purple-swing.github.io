@@ -23,7 +23,7 @@ li {
 
 ul {
     font-family: "DM Sans";
-    color: #fdff8f;
+    color: #fff9c6;
     font-weight: 100;
 }
 
@@ -31,6 +31,7 @@ ul {
 
 #nav {
     background-color: #0e425a;
+    scrollbar-color: #2a779b #0c1a26;
 }
 
 #nav a:hover {

@@ -2,6 +2,12 @@
     "projects":
     [
         {
+            "name": "Great Flarp Birb",
+            "img": "gfb.jpg",
+            "link": "https://purpleswing.itch.io/gfb",
+            "type": "game"
+        },
+        {
             "name": "Flarp Birb Horror 2",
             "img": "fbh2.jpg",
             "link": "https://purpleswing.itch.io/fbh2",

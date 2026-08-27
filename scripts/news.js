@@ -24,7 +24,7 @@ async function addNewsPages()
         data = await res.json();
     } 
     catch (err) {
-        console.error("Couldn't get news.", err);
+        console.error("Couldn't get news json.", err);
         return;
     }
 

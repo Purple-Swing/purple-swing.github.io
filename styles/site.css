@@ -178,8 +178,12 @@ IS MOBILE
 */
 
 @media screen and (max-width: 800px) {    
-    #nav, body, h1, h2, h3, p, li {
-        font-size: 116%;
+    h1, h2, h3 {
+        font-size: 110%;
+    }
+
+    #nav, p, li {
+        font-size: 80%;
     }
 
     html {

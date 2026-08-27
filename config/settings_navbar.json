@@ -1,5 +1,5 @@
 {
-    "hide": "false",
+    "hide": false,
     "pages": 
     [
         {
@@ -11,12 +11,7 @@
             "displayName": "Projects",
             "image": "",
             "href": "/projects.html"
-        },
-        {
-            "displayName": "Socials",
-            "image": "",
-            "href": "/socials.html"
-        },
+        },  
         {   
             "displayName": "News",
             "image": "",
@@ -27,10 +22,10 @@
             "image": "",
             "href": "/archive.html"
         },
-        {   
-            "displayName": "Site Updates",
+        {
+            "displayName": "Socials",
             "image": "",
-            "href": "/updates.html"
+            "href": "/socials.html"
         }
     ]
 }
