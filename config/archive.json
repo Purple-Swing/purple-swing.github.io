@@ -72,6 +72,18 @@
         ]
     },
     {
+        "name": "Vs. Al3x",
+        "binFolder": "al3x",
+        "versions": [
+            {
+                "version": "1.0.0",
+                "releaseDate": "17/08/26",
+                "platforms": "any",
+                "link": "1.0.0"
+            }
+        ]
+    },
+    {
         "name": "Flarp Birb Horror 2",
         "binFolder": "fbh2",
         "versions": [

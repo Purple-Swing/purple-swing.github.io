@@ -29,17 +29,24 @@ async function createArchive() {
 
             li.append(`v${versionData.version} ( `);
 
-            ["Windows", "Mac", "Linux"].forEach((os, index) => {
-                li.appendChild(createPlatform(versionData, os, archiveTopic.binFolder));
+            if (versionData.platforms == "any")
+            {
+                li.appendChild(createPlatform(versionData, "Any", archiveTopic.binFolder));
+            }
+            else
+            {
+                ["Windows", "Mac", "Linux"].forEach((os, index) => {
+                    li.appendChild(createPlatform(versionData, os, archiveTopic.binFolder));
 
-                if (index < 2) {
-                    const appendLine = document.createElement("span");
-                    appendLine.innerText = " | "; 
-                    appendLine.style.color = "#33727a";
-                    
-                    li.appendChild(appendLine);
-                }
-            });
+                    if (index < 2) {
+                        const appendLine = document.createElement("span");
+                        appendLine.innerText = " | "; 
+                        appendLine.style.color = "#33727a";
+                        
+                        li.appendChild(appendLine);
+                    }
+                });
+            }
 
             li.append(` ) - ${versionData.releaseDate ? versionData.releaseDate : "Unknown"}`);
 
@@ -59,7 +66,11 @@ function createPlatform(versionData, os, folder) {
 
     if ((versionData.link || versionData.offsite) && versionData.platforms)
     {
-        if (versionData.platforms.includes(os.toLowerCase()))
+        if (versionData.platforms == "any")
+        {
+            file = `${versionData.link}-any.zip`;
+        }
+        else if (versionData.platforms.includes(os.toLowerCase()))
         {        
             switch (os) 
             {
@@ -75,7 +86,7 @@ function createPlatform(versionData, os, folder) {
                     }
                 case "Linux":
                     {
-                        file = `${versionData.link}-lix.zip`;
+                        file = `${versionData.link}-lnx.zip`;
                         break;
                     }
             }  
