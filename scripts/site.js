@@ -111,6 +111,5 @@ function genMeta()
 
 // CSS load
 genMeta();
-loadCSS("site");
-document.addEventListener("DOMContentLoaded", () => createNavBar());
+document.addEventListener("DOMContentLoaded", () => { createNavBar(); });
 loadSiteInfo();

@@ -1,5 +1,64 @@
 [
     {
+        "name": "Vs. Al3x",
+        "binFolder": "al3x",
+        "versions": [
+            {
+                "version": "1.0.0",
+                "releaseDate": "17/08/26",
+                "platforms": "any",
+                "link": "1.0.0"
+            }
+        ]
+    },
+    {
+        "name": "Flarp Birb Horror 2",
+        "binFolder": "fbh2",
+        "versions": [
+            {
+                "version": "0.1.0",
+                "releaseDate": "19/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.2.0",
+                "releaseDate": "22/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.3.0",
+                "releaseDate": "23/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.4.0",
+                "releaseDate": "29/03/25",
+                "link": ""
+            },
+            {
+                "version": "0.4.1",
+                "releaseDate": "28/04/25",
+                "link": ""
+            },
+            {
+                "version": "0.5.0",
+                "releaseDate": "06/05/25",
+                "link": ""
+            },
+            {
+                "version": "0.5.1",
+                "releaseDate": "16/11/25",
+                "link": ""
+            },
+            {
+                "version": "0.6.0",
+                "releaseDate": "30/03/26",
+                "platforms": ["windows"],
+                "link": "0.6.0"
+            }
+        ]
+    },
+    {
         "name": "Great Flarp Birb",
         "binFolder": "gfb",
         "versions": [
@@ -68,65 +127,6 @@
                 "releaseDate": "28/08/23",
                 "platforms": ["windows"],
                 "link": "1.3.1"
-            }
-        ]
-    },
-    {
-        "name": "Vs. Al3x",
-        "binFolder": "al3x",
-        "versions": [
-            {
-                "version": "1.0.0",
-                "releaseDate": "17/08/26",
-                "platforms": "any",
-                "link": "1.0.0"
-            }
-        ]
-    },
-    {
-        "name": "Flarp Birb Horror 2",
-        "binFolder": "fbh2",
-        "versions": [
-            {
-                "version": "0.1.0",
-                "releaseDate": "19/03/25",
-                "link": ""
-            },
-            {
-                "version": "0.2.0",
-                "releaseDate": "22/03/25",
-                "link": ""
-            },
-            {
-                "version": "0.3.0",
-                "releaseDate": "23/03/25",
-                "link": ""
-            },
-            {
-                "version": "0.4.0",
-                "releaseDate": "29/03/25",
-                "link": ""
-            },
-            {
-                "version": "0.4.1",
-                "releaseDate": "28/04/25",
-                "link": ""
-            },
-            {
-                "version": "0.5.0",
-                "releaseDate": "06/05/25",
-                "link": ""
-            },
-            {
-                "version": "0.5.1",
-                "releaseDate": "16/11/25",
-                "link": ""
-            },
-            {
-                "version": "0.6.0",
-                "releaseDate": "30/03/26",
-                "platforms": ["windows"],
-                "link": "0.6.0"
             }
         ]
     }

@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 
+<link rel="stylesheet" type="text/css" href="/styles/site.css">
+<link rel="stylesheet" type="text/css" href="/styles/home.css">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="/scripts/site.js"></script>
-    <link rel="stylesheet" type="text/css" href="/styles/home.css">
+    <script src="/scripts/home.js"></script>
     <title>Purple Swing | Home</title>
 </head>
 
 <body>
+    <div id="page-transition"></div>
+
     <div class="topSector">
         <!--Hacky way to get newest video-->
         <iframe src="https://www.youtube.com/embed/videoseries?list=UUTDFq4W1yEZBgCEmIfVHXKQ&autoplay=1&mute=1"></iframe>
 
         <div id="logo">
             <img src="/img/logo/ps.png">
+        </div>
+    </div>
+
+    <hr>
+    
+    <div id="highlighted-project" class="group">
+        <h1 id="title">Title</h1>
+         
+        <div class="topSector">
+            <p id="description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto earum hic dolorum laudantium 
+                impedit explicabo ab adipisci officia aperiam libero! Quasi maxime nihil perferendis quibusdam ipsum, eveniet possimus ipsa voluptatibus.
+            </p>
+            
+            <iframe id="video" src=""></iframe>
         </div>
     </div>
 
