@@ -70,7 +70,7 @@ async function loadSiteInfo()
     // Bottom Text
     const smallTextElement = document.createElement("p");
     smallTextElement.id = "bottomText";
-    smallTextElement.innerHTML = `v${site_info.version} | ${site_info.releaseDate} - © PURPLE SWING 2026, JOINT AUTHORSHIP`;
+    smallTextElement.innerHTML = `v${site_info.version} | ${site_info.releaseDate} - © PURPLE SWING 2026, All rights reserved`;
     document.body.append(smallTextElement);
 
     // Member list
