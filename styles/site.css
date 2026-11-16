@@ -127,6 +127,11 @@ ELEMENTS
     height: 3px;
 }
 
+.group img {
+    border-radius: 15px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6));
+}
+
 
 /* 
 NAVBAR 

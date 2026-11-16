@@ -8,6 +8,12 @@
                 "releaseDate": "17/08/26",
                 "platforms": "any",
                 "link": "1.0.0"
+            },
+            {
+                "version": "1.1.0",
+                "releaseDate": "16/11/26",
+                "platforms": "any",
+                "link": "1.1.0"    
             }
         ]
     },
@@ -106,7 +112,7 @@
             },
             {
                 "version": "1.1.0",
-                "releaseDate": "",
+                "releaseDate": "27/08/23",
                 "platforms": ["windows"],
                 "link": "1.1.0"
             },
