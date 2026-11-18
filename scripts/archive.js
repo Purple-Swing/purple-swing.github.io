@@ -1,6 +1,7 @@
 let archive_data;
 
-async function createArchive() {
+async function createArchive() 
+{
     try {
         const res = await fetch("/config/archive.json");
         archive_data = await res.json();
@@ -11,6 +12,7 @@ async function createArchive() {
     }
 
     const archiveContainer = document.getElementById("archive-container");
+    
     for (let i = 0; i < archive_data.length; ++i)
     {
         const archiveTopic = archive_data[i];
@@ -29,23 +31,35 @@ async function createArchive() {
 
             li.append(`v${versionData.version} ( `);
 
-            if (versionData.platforms == "any")
+            if (versionData.platforms === "any")
             {
                 li.appendChild(createPlatform(versionData, "Any", archiveTopic.binFolder));
             }
-            else
+            else if (Array.isArray(versionData.platforms))
             {
-                ["Windows", "Mac", "Linux"].forEach((os, index) => {
+                versionData.platforms.forEach((platform, index) => {
+                    const os = platform.charAt(0).toUpperCase() + platform.slice(1);
+
                     li.appendChild(createPlatform(versionData, os, archiveTopic.binFolder));
 
-                    if (index < 2) {
+                    if (index < versionData.platforms.length - 1) 
+                    {
                         const appendLine = document.createElement("span");
-                        appendLine.innerText = " | "; 
+                        appendLine.innerText = " | ";
                         appendLine.style.color = "#33727a";
-                        
+
                         li.appendChild(appendLine);
                     }
                 });
+            }
+            else
+            {
+                const span = document.createElement("span");
+                span.textContent = "No Download";
+                span.style.fontStyle = "italic";
+                span.style.color = "#33727a";
+
+                li.appendChild(span);
             }
 
             li.append(` ) - ${versionData.releaseDate ? versionData.releaseDate : "Unknown"}`);
@@ -55,48 +69,42 @@ async function createArchive() {
 
         archiveContainer.appendChild(topicList);
 
-        if (i < archive_data.length - 1) {
+        if (i < archive_data.length - 1) 
+        {
             archiveContainer.appendChild(document.createElement("hr"));
         }        
     }
 }
 
-function createPlatform(versionData, os, folder) {
+function createPlatform(versionData, os, folder)
+{
+    const osExtensions = {
+        windows: "win",
+        mac: "mac",
+        linux: "lnx"
+    };
+
     let file = "";
 
-    if ((versionData.link || versionData.offsite) && versionData.platforms)
+    if (versionData.platforms === "any")
     {
-        if (versionData.platforms == "any")
+        file = `${versionData.link}-any.zip`;
+    }
+    else if (Array.isArray(versionData.platforms))
+    {
+        const platform = os.toLowerCase();
+
+        if (versionData.platforms.includes(platform) && osExtensions[platform])
         {
-            file = `${versionData.link}-any.zip`;
-        }
-        else if (versionData.platforms.includes(os.toLowerCase()))
-        {        
-            switch (os) 
-            {
-                case "Windows":
-                    {
-                        file = `${versionData.link}-win.zip`;
-                        break;
-                    }
-                case "Mac":
-                    {
-                        file = `${versionData.link}-mac.zip`;
-                        break;
-                    }
-                case "Linux":
-                    {
-                        file = `${versionData.link}-lnx.zip`;
-                        break;
-                    }
-            }  
+            file = `${versionData.link}-${osExtensions[platform]}.zip`;
         }
     }
 
-    if (file) 
+    if ((versionData.link || versionData.offsite) && file)
     {
         const link = document.createElement("a");
-        link.href = versionData.offsite ? versionData.offsite : `/bin/${folder}/${file}`;
+
+        link.href = versionData.offsite || `/bin/${folder}/${file}`;
         link.textContent = os;
 
         return link;
@@ -106,6 +114,7 @@ function createPlatform(versionData, os, folder) {
     span.textContent = os;
     span.style.fontStyle = "italic";
     span.style.color = "#33727a";
+
     return span;
 }
 
